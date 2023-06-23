@@ -14,7 +14,13 @@
 * Machine Learning
 
 ## Project Proposal
+The aim of our project is to predict the likelihood of defaulting credit card payments. We´ll examine relationships between profile of the client (gender, age, education, marital status), payment history and other related relationships derived from the data.
 
+We have two main goals:
+1) Create a dashboard of visualizations in `Tableau` of the default and non-default credit card clients and identify the relationships with demographics and `payment history`
+
+2) Create a supervised  `machine learning` model to predict the whether a credit card clients will de on default or not depending on the profile of the client and `payment history`
+   
 ## Project overview 
 
 ## Data source
