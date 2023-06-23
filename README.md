@@ -18,6 +18,7 @@
 ## Project overview 
 
 ## Data source
+For this project we fetch and grabbed the data from **[Kaggle](https://www.kaggle.com/)** our data set were retrived form **[Kaggle Data Source](https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook)**
 
 ## Data Cleanup and Analysis
 ### Exploration and clean up
