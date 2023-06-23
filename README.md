@@ -13,20 +13,84 @@
 * Tableau
 * Machine Learning
 
+
+
+## Introduction
+
+This project is aimed at predicting the case of customers default payments based of data colected in Taiwan. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be very valuable.
+
+
 ## Project Proposal
+
+We have two goals:
+
+1) Creating a set of visualizations in Tableau of the default and non-default credit card clients and the relationship that defaulting has with demographic features and the payment history of each customer.
+
+2) Creating a supervised machine learning model to predict whether a credit card holder will be on default or not depending on their demographic profile and payment history.
+The purpose is to evaluate which customers will default on their credit card payments.
+Default payment could be --> Yes = 1, No = 0, as the response variable (Y value). 
 
 ## Project overview 
 
+
+All the work done, tools and can be summarized in the next image:
+
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Proj_Breakdown.png" /></p>
+
+
 ## Data source
+
 For this project we fetch and grabbed the data from **[Kaggle](https://www.kaggle.com/)** our data set were retrived form **[Kaggle Data Source](https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook)**
 
+
+## Data Explained
+
+All The fields (in order of appereance):
+
+* ID
+* Credit limit
+* Age
+* Sex
+* Education
+* Marriage
+* Payment made Sep 2005
+* Payment made Aug 2005
+* Payment made Jul 2005
+* Payment made Jun 2005
+* Payment made May 2005
+* Payment made Apr 2005
+* Amount of bill Sep 2005
+* Amount of bill Aug 2005
+* Amount of bill Jul 2005
+* Amount of bill Jun 2005
+* Amount of bill May 2005
+* Amount of bill Apr 2005
+* Amount previous pay Sep 2005
+* Amount previous pay Aug 2005
+* Amount previous pay Jul 2005
+* Amount previous pay Jun 2005
+* Amount previous pay May 2005
+* Amount previous pay Apr 2005
+--> Default Payment Next Month (Y Value)
+
+
+
 ## Data Cleanup and Analysis
+
 ### Exploration and clean up
 
 
 ### Analysis
 
-## Results
+There were explored several models; see in the next image, the comparison of different results of all models used:
+
+
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Model_perf_Eval.png" /></p>
+
+Having said that, considering the results the best is Randon Forest with oversampler model.
+
+
+## Description of the best ML Model
 
 
 Facts of the best model chosen --> a Random Forest with oversampler
@@ -39,6 +103,25 @@ Facts of the best model chosen --> a Random Forest with oversampler
 
 This model "a Random Forest with oversampler" get the best results, because the overall performance improved, and the precision of the default credits has increased to 0.61.
 
+
+Besides that, we found that just 12 features of data, represent 62% of the feature importance of the model, being the most relevants : credit limit and age. 
+
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/12_features.png" /></p>
+
+the 12 importance features (62%) in order of appereance:
+* Credit limit
+* Age
+* Amount of bill Sep 2005
+* Amount previous pay Sep 2005
+* Amount of bill Aug 2005
+* Amount previous pay Aug 2005
+* Amount of bill Jul 2005
+* Amount of bill Jun 2005
+* Payment made Sep 2005
+* Amount of bill May 2005
+* Amount of bill Apr 2005
+
+
 ## Visual references
 
 Check the next link, the Dashboard designed in Public Tableau to describe the data:
@@ -46,34 +129,57 @@ Check the next link, the Dashboard designed in Public Tableau to describe the da
 https://public.tableau.com/app/profile/aldo.silva4530/viz/Debtors_16872317116610/Story1?publish=yes
 
 
-The visualization incluyes important facts:
+The visualization describes important facts:
 
 Dashboard 1: Likelihood of defaulting by age group and credit limit
 
-<p align="center"><img src="" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_1.png" /></p>
+
 
 Dashboard 2: Likelihood of defaulting by sex and education level
 
-<p align="center"><img src="" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_2.png" /></p>
 
 Dashboard 3: Likelihood of defaulting by marital status
 
-<p align="center"><img src="" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_3.png" /></p>
 
 Dashboard 4: Likelihood of defaulting by timeliness of past payments
 
-<p align="center"><img src="" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_4.png" /></p>
 
 Dashboard 5: Likelihood of defaulting by amount of past payments and past total dues
 
-<p align="center"><img src="" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_5.png" /></p>
 
 
 
 ## Conclusions
 
-Based on ML model, we are able to determine 
+Based on the work done and ML model built, we are able to determine: 
 
+* Predicting credit card default is hard.
+
+* There are certain variables with a strong relationship, such as:
+
+Credit limit
+Timeliness of past payments
+
+* Some variables have a mild relationship, such as:
+
+    - Age group
+    - Sex
+    - Education level
+    - Amount of past payments
+
+* Some variables have a weak relationship or no relationship at all:
+
+    - Marital status
+    - Amount of past total dues
+
+* Despite of these challenges, we still managed to create a predictive model with acceptable accuracy.
+
+* Finding variables with more explanatory power might yield better results.
 
 
 ## Acknowledgments
