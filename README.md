@@ -38,7 +38,7 @@ Bansodesandeep. (2022). Credit Card Default Prediction. Kaggle. https://www.kagg
 
 
 ## Rubric
-* [Project 3 Rubric - Visualizing Data.docx](https://github.com/paoaleman19/Project3-JS/files/11402900/Project.4.Rubric.-.Visualizing.Data.docx)
+* [Project 4 Rubric - Machine Learning Integration.docx]([https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Project%204%20Rubric%20-%20Machine%20Learning%20Integration.docx])
 
 ## Copyright
 
