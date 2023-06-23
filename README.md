@@ -1,4 +1,7 @@
-# Likelihood_of_defaulting_credit_card_payments
+# Project 4
+## Machine Learning Integration
+## Likelihood of defaulting credit card payments
+
 ## Authors
 * **Alonso Lozano** - **[My github](https://github.com/loncho95 "GitHub for Alonso Lozano")**
 * **Aldo Silva** - **[My github](https://github.com/aldosilesp "GitHub for Aldo Silva")**
