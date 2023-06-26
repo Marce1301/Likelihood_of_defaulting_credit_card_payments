@@ -92,7 +92,13 @@ Categorical variables were converted into binary variables, known as dummy varia
 
 The data was split up into training and testing sets, stratifing them based on the target values. This ensured a balanced distribution of target values in both sets, reducing bias in subsequent analyses and model training.
 
-Principal Component Analysis (PCA) and Client Clusterization (Unsupervised ML) were initialy performed to reduce the dimensionality of the dataset by transforming the original variables into uncorrelated principal components but in the final final we omit this steps.
+In the original analysis, Principal Component Analysis (PCA) and Client Clusterization (unsupervised ML) were conducted as preprocessing steps to reduce the dimensionality of the dataset and transform the original variables into uncorrelated principal components. However, in the final analysis, these steps were omitted because they were found to decrease the accuracy of the models.
+
+While PCA is commonly used for dimensionality reduction and feature extraction, it is possible that in this particular dataset, the reduced number of dimensions resulted in the loss of important information for accurate predictions. In some cases, PCA may not effectively capture the underlying patterns or relationships within the data, leading to a decrease in predictive performance.
+
+Similarly, client clusterization through unsupervised machine learning is used to group similar clients together based on their features or behavior. However, if the resulting clusters do not provide meaningful insights or do not align with the problem at hand, incorporating them into the models may not improve accuracy.
+
+In this scenario, it seems that excluding PCA and client clusterization from the models improved the accuracy, indicating that the original variables and their correlations were more useful for predicting the desired outcome. It's important to remember that data preprocessing techniques should be applied judiciously, as their impact on the final models can vary depending on the dataset and the specific problem being addressed.
 
 ### Analysis
 
