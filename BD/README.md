@@ -23,9 +23,11 @@ To have more information about this process, go README file in BD folder.
 To see the CREATE TABLE Statement, go to the next link:
 
 
-link
+https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/CREATE_TABLE_Script.sql
+
 
 The next picture describes de table in MySQL WorkBench tool.
+
 
 <p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Table_Structure.png" /></p>
 
@@ -34,6 +36,7 @@ The next picture describes de table in MySQL WorkBench tool.
 We tried to upload the data with tool from MySQL WorkBench tool.
 
 The next picture shows the main screen to the configuration of this process
+
 
 <p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/First_Migration_Try.png" /></p>
 
@@ -46,7 +49,8 @@ Having said that, considering the results the best is Randon Forest with oversam
 We used a Python program to load the data.
 See the code in this link:
 
-link
+
+https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/SELECT_Script.sql
 
 It took almost 3 hours to finish.
 
@@ -60,7 +64,12 @@ As you can see in the next picture, now the data is in the table and could be ac
 
 To get SQL scripts used, go to this link:
 
-link
+
+
+https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/SELECT_Script.sql
+
+
+    
 
 Copyright:copyright: 2023. All Rights Reserved.
 
