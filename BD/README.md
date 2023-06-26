@@ -1,210 +1,66 @@
-# Project 4
-## Machine Learning Integration
-## Likelihood of defaulting credit card payments
-
-## Authors
-* **Alonso Lozano** - **[My github](https://github.com/loncho95 "GitHub for Alonso Lozano")**
-* **Aldo Silva** - **[My github](https://github.com/aldosilesp "GitHub for Aldo Silva")**
-* **Alejandra Espinosa** - **[My github](https://github.com/zuntaalejandra "GitHub for Ale Espinosa")**
-* **Marcela Maldonado** - **[My github](https://github.com/Marce1301 "GitHub for Marcela Maldonado")**
-
-## Tools and sources
-* Python Pandas
-* Tableau
-* Machine Learning
-
-## Introduction
-
-This project is aimed at predicting the case of customers default payments based of data colected in Taiwan. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be very valuable.
-
-## Project Proposal
-
-We have two goals:
-
-1) Creating a set of visualizations in Tableau of the default and non-default credit card clients and the relationship that defaulting has with demographic features and the payment history of each customer.
-
-2) Creating a supervised machine learning model to predict whether a credit card holder will be on default or not depending on their demographic profile and payment history.
-The purpose is to evaluate which customers will default on their credit card payments.
-Default payment could be --> Yes = 1, No = 0, as the response variable (Y value). 
-
-## Project overview 
-
-All the work done, tools and can be summarized in the next image:
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Proj_Breakdown.png" /></p>
 
 
 ## Data source
 
-For this project we fetch and grabbed the data from **[Kaggle](https://www.kaggle.com/)** our data set were retrived form **[Kaggle Data Source](https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook)**
 
+Original data was taken from this link:
+
+
+**[Kaggle](https://www.kaggle.com/)** our data set were retrived form **[Kaggle Data Source](https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook)**
+
+
+We got the data into a CSV file and an MS Excel file (XLSX format)
+More than 29,000 rows.
 
 ## Data loaded in a MySQL Database in AWS iCloud
 
 
-In order to have data available, we uploaded in a MySQL BD.
+In order to have the data available, we uploaded in a MySQL BD.
 To have more information about this process, go README file in BD folder. 
-
 
 ## Data Explained
 
-All The fields (in order of appereance):
-
-* ID (primary key)
-* Credit limit (Amount of money that a customer can access throw his credit card)
-* Age (the age of the customer)
-* Sex 
-* Education
-* Marriage
-* Payment made Sep 2005
-* Payment made Aug 2005
-* Payment made Jul 2005
-* Payment made Jun 2005
-* Payment made May 2005
-* Payment made Apr 2005
-* Amount of bill Sep 2005
-* Amount of bill Aug 2005
-* Amount of bill Jul 2005
-* Amount of bill Jun 2005
-* Amount of bill May 2005
-* Amount of bill Apr 2005
-* Amount previous pay Sep 2005
-* Amount previous pay Aug 2005
-* Amount previous pay Jul 2005
-* Amount previous pay Jun 2005
-* Amount previous pay May 2005
-* Amount previous pay Apr 2005
---> Default Payment Next Month (Y Value)
+To see the CREATE TABLE Statement, go to the next link:
 
 
-## Data Cleanup and Analysis
+link
 
-### Exploration and clean up
+The next picture describes de table in MySQL WorkBench tool.
 
-* Null Value Handling
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Table_Structure.png" /></p>
 
-To ensure data integrity, null values were addressed by either removing or imputing missing values
+## First migration try
 
-* Standardization
+We tried to upload the data with tool from MySQL WorkBench tool.
 
-Numeric features were standardized by scaling them to have zero mean and unit variance.
-Dummy variables were excluded from this process.
+The next picture shows the main screen to the configuration of this process
 
-* Dummy Variable Creation
-  
-Categorical variables were converted into binary variables, known as dummy variables, to effectively represent them in the dataset.
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/First_Migration_Try.png" /></p>
 
-* Train-Test Data Split with Stratification
-
-The data was split up into training and testing sets, stratifing them based on the target values. This ensured a balanced distribution of target values in both sets, reducing bias in subsequent analyses and model training.
-
-Principal Component Analysis (PCA) and Client Clusterization (Unsupervised ML) were initialy performed to reduce the dimensionality of the dataset by transforming the original variables into uncorrelated principal components but in the final final we omit this steps.
-
-### Analysis
-
-There were explored several models; see in the next image, the comparison of different results of all models used:
-
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Model_perf_Eval.png" /></p>
+unfortunately, this task never ended (it was taking so much time that we had to break the process)
 
 Having said that, considering the results the best is Randon Forest with oversampler model.
 
+## Second migration try
 
-## Description of the best ML Model
+We used a Python program to load the data.
+See the code in this link:
 
+link
 
-Facts of the best model chosen --> a Random Forest with oversampler
+It took almost 3 hours to finish.
 
-1. Precision of 0 (non-default credits) is 0.85: Out of all instances predicted as non-default credits, 85% are actually non-default credits.
-2. Precision of 1 (default credits) is 0.61: Out of all instances predicted as default credits, 61% are actually default credits.
-3. Recall of 0 (non-default credits) is 0.92: The model correctly identifies 92% of the non-default credits out of all actual non-default credits.
-4. Recall of 1 (default credits) is 0.45: The model correctly identifies 45% of the default credits out of all actual default credits.
-5. Accuracy Score is 0.8132: The model predicts the correct credit status (default or non-default) for approximately 81.32% of the instances.
+## Confirmation of data into de iCloud BD
 
-This model "a Random Forest with oversampler" get the best results, because the overall performance improved, and the precision of the default credits has increased to 0.61.
-
-
-Besides that, we found that just 12 features of data, represent 62% of the feature importance of the model, being the most relevants : credit limit and age. 
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/12_features.png" /></p>
-
-The 12 importance features (62%) in order of appereance:
-* Credit limit
-* Age
-* Amount of bill Sep 2005
-* Amount previous pay Sep 2005
-* Amount of bill Aug 2005
-* Amount previous pay Aug 2005
-* Amount of bill Jul 2005
-* Amount of bill Jun 2005
-* Payment made Sep 2005
-* Amount of bill May 2005
-* Amount of bill Apr 2005
-
-## Visual references
-
-Check the next link, the Dashboard designed in Public Tableau to describe the data:
-
-https://public.tableau.com/app/profile/aldo.silva4530/viz/Debtors_16872317116610/Story1?publish=yes
-
-The visualization describes important facts:
-
-Dashboard 1: Likelihood of defaulting by age group and credit limit
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_1.png" /></p>
-
-Dashboard 2: Likelihood of defaulting by sex and education level
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_2.png" /></p>
-
-Dashboard 3: Likelihood of defaulting by marital status
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_3.png" /></p>
-
-Dashboard 4: Likelihood of defaulting by timeliness of past payments
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_4.png" /></p>
-
-Dashboard 5: Likelihood of defaulting by amount of past payments and past total dues
-
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_5.png" /></p>
-
-## Conclusions
-
-Based on the work done and ML model built, we are able to determine: 
-
-* Predicting credit card default is hard.
-
-* There are certain variables with a strong relationship, such as:
-
-Credit limit
-Timeliness of past payments
-
-* Some variables have a mild relationship, such as:
-
-    - Age group
-    - Sex
-    - Education level
-    - Amount of past payments
-
-* Some variables have a weak relationship or no relationship at all:
-
-    - Marital status
-    - Amount of past total dues
-
-* Despite of these challenges, we still managed to create a predictive model with acceptable accuracy.
-
-* Finding variables with more explanatory power might yield better results.
+As you can see in the next picture, now the data is in the table and could be accesible from Google Colab and Tableau.  
 
 
-## Resources
 
-Bansodesandeep. (2022). Credit Card Default Prediction. Kaggle. https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/SELECT.png" /></p>
 
-## Rubric
-* [Project 4 Rubric - Machine Learning Integration.docx]([https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Project%204%20Rubric%20-%20Machine%20Learning%20Integration.docx])
+To get SQL scripts used, go to this link:
 
-## Copyright
+link
 
 Copyright:copyright: 2023. All Rights Reserved.
 
