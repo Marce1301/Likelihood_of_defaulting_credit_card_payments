@@ -13,12 +13,9 @@
 * Tableau
 * Machine Learning
 
-
-
 ## Introduction
 
 This project is aimed at predicting the case of customers default payments based of data colected in Taiwan. From the perspective of risk management, the result of predictive accuracy of the estimated probability of default will be very valuable.
-
 
 ## Project Proposal
 
@@ -31,7 +28,6 @@ The purpose is to evaluate which customers will default on their credit card pay
 Default payment could be --> Yes = 1, No = 0, as the response variable (Y value). 
 
 ## Project overview 
-
 
 All the work done, tools and can be summarized in the next image:
 
@@ -74,11 +70,28 @@ All The fields (in order of appereance):
 --> Default Payment Next Month (Y Value)
 
 
-
 ## Data Cleanup and Analysis
 
 ### Exploration and clean up
 
+* Null Value Handling
+
+To ensure data integrity, null values were addressed by either removing or imputing missing values
+
+* Standardization
+
+Numeric features were standardized by scaling them to have zero mean and unit variance.
+Dummy variables were excluded from this process.
+
+* Dummy Variable Creation
+  
+Categorical variables were converted into binary variables, known as dummy variables, to effectively represent them in the dataset.
+
+* Train-Test Data Split with Stratification
+
+The data was split up into training and testing sets, stratifing them based on the target values. This ensured a balanced distribution of target values in both sets, reducing bias in subsequent analyses and model training.
+
+Principal Component Analysis (PCA) and Client Clusterization (Unsupervised ML) were initialy performed to reduce the dimensionality of the dataset by transforming the original variables into uncorrelated principal components but in the final final we omit this steps.
 
 ### Analysis
 
