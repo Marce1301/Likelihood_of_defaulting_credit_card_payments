@@ -53,6 +53,7 @@ for n, row in df.iterrows():
         DEFAULT_PAYMENT_NEXT_MONTH) values (\
         %s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)")
 
+    # build the secord part of INSERT STATEMENT with row data 
     data_insert = (row["ID"],\
             row["LIMIT_BAL"],\
             row["SEX"],\
@@ -81,6 +82,8 @@ for n, row in df.iterrows():
 
 
     cursor_insert = cnx.cursor(buffered=True)
+
+    # execute the INSERT, with the row data into the table credit_card_prediction
     cursor_insert.execute(insert_,(data_insert))
 
     print(f"{n} rows")
