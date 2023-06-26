@@ -50,7 +50,7 @@ We used a Python program to load the data.
 See the code in this link:
 
 
-https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/SELECT_Script.sql
+https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/loading_data.py
 
 It took almost 3 hours to finish.
 
@@ -69,7 +69,7 @@ To get SQL scripts used, go to this link:
 https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/BD/SELECT_Script.sql
 
 
-    
+
 
 Copyright:copyright: 2023. All Rights Reserved.
 
