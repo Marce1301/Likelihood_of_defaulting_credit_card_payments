@@ -143,6 +143,10 @@ The 12 importance features (62%) in order of appereance:
 
 ## Visual references
 
+Check the next link, the Dashboard designed in Public Tableau to describe the data:
+
+https://public.tableau.com/app/profile/aldo.silva4530/viz/Debtors_16872317116610/Story1?publish=yes
+
 The visualization describes important facts:
 
 Dashboard 1: Likelihood of defaulting by age group and credit limit
