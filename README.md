@@ -121,7 +121,7 @@ Besides that, we found that just 12 features of data, represent 62% of the featu
 
 <p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/12_features.png" /></p>
 
-the 12 importance features (62%) in order of appereance:
+The 12 importance features (62%) in order of appereance:
 * Credit limit
 * Age
 * Amount of bill Sep 2005
@@ -134,20 +134,17 @@ the 12 importance features (62%) in order of appereance:
 * Amount of bill May 2005
 * Amount of bill Apr 2005
 
-
 ## Visual references
 
 Check the next link, the Dashboard designed in Public Tableau to describe the data:
 
 https://public.tableau.com/app/profile/aldo.silva4530/viz/Debtors_16872317116610/Story1?publish=yes
 
-
 The visualization describes important facts:
 
 Dashboard 1: Likelihood of defaulting by age group and credit limit
 
 <p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_1.png" /></p>
-
 
 Dashboard 2: Likelihood of defaulting by sex and education level
 
@@ -164,8 +161,6 @@ Dashboard 4: Likelihood of defaulting by timeliness of past payments
 Dashboard 5: Likelihood of defaulting by amount of past payments and past total dues
 
 <p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Tableau_page_5.png" /></p>
-
-
 
 ## Conclusions
 
@@ -195,10 +190,9 @@ Timeliness of past payments
 * Finding variables with more explanatory power might yield better results.
 
 
-## Acknowledgments
+## Resources
 
 Bansodesandeep. (2022). Credit Card Default Prediction. Kaggle. https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook
-
 
 ## Rubric
 * [Project 4 Rubric - Machine Learning Integration.docx]([https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Project%204%20Rubric%20-%20Machine%20Learning%20Integration.docx])
