@@ -208,4 +208,4 @@ Bansodesandeep. (2022). Credit Card Default Prediction. Kaggle. https://www.kagg
 
 Copyright:copyright: 2023. All Rights Reserved.
 
-© 2023  Lozano Alonso ,Silva Aldo, Espinosa Alejandra, Maldonado Marcela , BootCamp Tecnologico de Monterrey.
+© 2023  Lozano Alonso, Silva Aldo, Espinosa Alejandra, Maldonado Marcela , BootCamp Tecnologico de Monterrey.
