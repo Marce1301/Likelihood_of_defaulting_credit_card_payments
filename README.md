@@ -196,10 +196,13 @@ Timeliness of past payments
 
 * Finding variables with more explanatory power might yield better results.
 
-
 ## Resources
 
 Bansodesandeep. (2022). Credit Card Default Prediction. Kaggle. https://www.kaggle.com/code/bansodesandeep/credit-card-default-prediction/notebook
+
+## Final presentation
+
+This is the link for our final **[presentation](https://docs.google.com/presentation/d/1sp-wegHiFbtCtyZaVcW57H3rBTNwsZyvjz9urNN0BNM/edit#slide=id.g254769b9e3d_0_2)**
 
 ## Rubric
 * [Project 4 Rubric - Machine Learning Integration.docx]([https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Project%204%20Rubric%20-%20Machine%20Learning%20Integration.docx])
