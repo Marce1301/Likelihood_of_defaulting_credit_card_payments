@@ -32,7 +32,7 @@ Default payment could be --> Yes = 1, No = 0, as the response variable (Y value)
 
 All the work done, tools and can be summarized in the next image:
 
-<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/Proj_Breakdown.png" /></p>
+<p align="center"><img src="https://github.com/Marce1301/Likelihood_of_defaulting_credit_card_payments/blob/main/Other_Stuff/Images_README/P_B.png" /></p>
 
 
 ## Data source
